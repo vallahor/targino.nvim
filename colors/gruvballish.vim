@@ -157,11 +157,9 @@ call s:hi("BufferCurrentTarget", "NONE", "NONE", "#3d3339", "NONE")
 call s:hi("BufferVisibleMod", "NONE", "#d16d8a", "#3d3339", "NONE")
 
 " indent blank line
-call s:hi("IndentBlanklineSpaceChar", "NONE", "#794966", "NONE", "NONE")
-call s:hi("IndentBlanklineSpaceCharBlankline", "NONE", "#794966", "NONE", "NONE")
-call s:hi("IndentBlanklineContextSpaceChar", "NONE", "#794966", "NONE", "NONE")
-call s:hi("IndentBlanklineContextChar", "NONE", "#222022", "NONE", "NONE")
-call s:hi("IndentBlanklineContextStart", "NONE", "#222022", "NONE", "NONE")
+call s:hi("IblIndent", "NONE", "#353135", "NONE", "NONE")
+call s:hi("IblWhitespace", "NONE", "#353135", "NONE", "NONE")
+call s:hi("IblScope", "NONE", "#353135", "NONE", "NONE")
 
 " mini
 call s:hi("MiniStatuslineModeInsert", "NONE", "#121112", "#b1314c", "NONE")
