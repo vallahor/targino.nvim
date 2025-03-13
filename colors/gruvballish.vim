@@ -179,6 +179,8 @@ call s:hi("MiniGhostText", "NONE", "#696059", "NONE", "NONE")
 " call s:hi("MiniCursorwordCurrent", "NONE", "NONE", "#272527", "NONE")
 call s:hi("MiniCursorword", "NONE", "NONE", "#312531", "NONE")
 call s:hi("MiniCursorwordCurrent", "NONE", "NONE", "#312531", "NONE")
+" call s:hi("MiniCursorword", "underline", "NONE", "NONE", "#87787b")
+" call s:hi("MiniCursorwordCurrent", "underline", "NONE", "NONE", "#87787b")
 " call s:hi("MiniCursorword", "underline", "NONE", "NONE", "#766975")
 " call s:hi("MiniCursorwordCurrent", "underline", "NONE", "NONE", "#766975")
 
