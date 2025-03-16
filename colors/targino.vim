@@ -8,7 +8,7 @@ if exists("syntax_on")
   syntax reset
 endif
 
-let g:colors_name="gruvballish"
+let g:colors_name="targino"
 
 " example of assignment of a variable and passing them as a argument
 " let s:rosewater = "#DC8A78"
