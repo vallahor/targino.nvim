@@ -159,6 +159,9 @@ function M.setup()
 		TelescopeSelection = { bg = "#312531" },
 		TelescopeMatching = { fg = "#995464" },
 
+		LazyGitFloat = { bg = "#191319" },
+		LazyGitBorder = { bg = "#191319" },
+
 		-- treesitter
 		["@include"] = { bold = true, fg = "#96674E" },
 		["@keyword.import"] = { bold = true, fg = "#96674E" },
