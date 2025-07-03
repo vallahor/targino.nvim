@@ -18,7 +18,7 @@ Lazy:
 }
 ```
 
-Custom LSP highlights
+Diagnostic highlights
 ```lua
 vim.diagnostic.config({
   signs = {
