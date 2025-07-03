@@ -29,7 +29,7 @@ function M.setup()
 		Folded = { fg = "#A98D92" },
 		FoldColumn = { fg = "#A98D92" },
 		SignColumn = { fg = "#A98D92" },
-		IncSearch = { bg = "#c64964" },
+		IncSearch = { fg = "#121112", bg = "#c64964" },
 		CurSearch = { bg = "#373337" },
 		LineNr = { fg = "#493441" },
 		LineNrAbove = { fg = "#493441" },
