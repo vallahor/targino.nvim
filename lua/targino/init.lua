@@ -109,6 +109,17 @@ function M.setup()
 		DiagnosticWarn = { fg = "#825c3e" },
 		DiagnosticInfo = { fg = "#5d595d" },
 		DiagnosticHint = { fg = "#5d595d" },
+
+		DiagnosticLinehlError = { bg = "#241317" },
+		DiagnosticLinehlWarn = { bg = "#24180e" },
+		DiagnosticLinehlInfo = { bg = "#1a181a" },
+		DiagnosticLinehlHint = { bg = "#1a181a" },
+
+		DiagnosticNumhlError = { fg = "#832936", bg = "#241317" },
+		DiagnosticNumhlWarn = { fg = "#825c3e", bg = "#24180e" },
+		DiagnosticNumhlInfo = { fg = "#5d595d", bg = "#1a181a" },
+		DiagnosticNumhlHint = { fg = "#5d595d", bg = "#1a181a" },
+
 		DiagnosticDeprecated = { bg = "NONE" },
 		DiagnosticUnnecessary = { bg = "NONE" },
 		DiagnosticUnderlineError = { undercurl = true, sp = "#832936" },
@@ -124,6 +135,11 @@ function M.setup()
 		BufferCurrentSign = { bg = "#3d3339" },
 		BufferCurrentTarget = { bg = "#3d3339" },
 		BufferVisibleMod = { fg = "#d16d8a", bg = "#3d3339" },
+
+		-- Mini colors
+		MiniStatuslineModeInsert = { fg = "#121112", bg = "#b1314c" },
+		MiniStatuslineModeVisual = { fg = "NONE", bg = "#471A37" },
+		MiniGhostText = { fg = "#696059", bg = "NONE" },
 
 		-- MiniCursorword = {   bg = "#312531",  },
 		-- MiniCursorwordCurrent = {   bg = "#312531",  },
