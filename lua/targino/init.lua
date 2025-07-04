@@ -1,6 +1,21 @@
 local M = {}
 
-function M.setup()
+local config = {
+	include_bold = false,
+	repeat_italic = false,
+}
+
+local has_setup = false
+function M.setup(opts)
+	if has_setup then
+		return
+	end
+	has_setup = true
+
+	opts = opts or {}
+
+	config = vim.tbl_deep_extend("force", config, opts)
+
 	local highlights = {
 		Normal = { fg = "#A98D92", bg = "#121112" },
 		-- highlight = {  fg = "#794966",  },
@@ -83,13 +98,13 @@ function M.setup()
 		Float = { fg = "#d16d8a" },
 		Function = { fg = "#c58d5d" },
 		Conditional = { fg = "#794966" },
-		Repeat = { fg = "#794966" },
+		Repeat = { italic = config.repeat_italic, fg = "#794966" },
 		Label = { fg = "#794966" },
 		Whitespace = { fg = "#353135" },
 		Operator = { fg = "#794966" },
 		Keyword = { fg = "#a1495c" },
 		Exception = { fg = "#96516E" },
-		Include = { bold = true, fg = "#96674E" },
+		Include = { bold = config.include_bold, fg = "#96674E" },
 		Define = { fg = "#96674E" },
 		Macro = { fg = "#926C83" },
 		PreCondit = { fg = "#c58d5d" },
@@ -163,8 +178,8 @@ function M.setup()
 		LazyGitBorder = { bg = "#191319" },
 
 		-- treesitter
-		["@include"] = { bold = true, fg = "#96674E" },
-		["@keyword.import"] = { bold = true, fg = "#96674E" },
+		["@include"] = { bold = config.include_bold, fg = "#96674E" },
+		["@keyword.import"] = { bold = config.include_bold, fg = "#96674E" },
 		["@character"] = { fg = "#b16D8A" },
 		["@define"] = { fg = "#96674E" },
 		["@string"] = { fg = "#b16D8A" },
@@ -213,8 +228,8 @@ function M.setup()
 		["@punctuation.bracket"] = { fg = "#95667C" },
 		["@punctuation.special"] = { fg = "#794966" },
 		["@operator"] = { fg = "#794966" },
-		["@keyword.conditional"] = { fg = "#794966" },
-		["@keyword.repeat"] = { fg = "#794966" },
+		["@keyword.conditional"] = { italic = config.repeat_italic, fg = "#794966" },
+		["@keyword.repeat"] = { italic = config.repeat_italic, fg = "#794966" },
 		["@exception"] = { fg = "#96516E" },
 		["@keyword.exception"] = { fg = "#96516E" },
 		["@label"] = { fg = "#96516E" },
@@ -237,8 +252,8 @@ function M.setup()
 		["@tag.attribute"] = { fg = "#926C83" },
 	}
 
-	for group, opts in pairs(highlights) do
-		vim.api.nvim_set_hl(0, group, opts)
+	for group, hl_opts in pairs(highlights) do
+		vim.api.nvim_set_hl(0, group, hl_opts)
 	end
 end
 
