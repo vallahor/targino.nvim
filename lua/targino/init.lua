@@ -124,6 +124,7 @@ function M.setup(opts)
 		DiagnosticWarn = { fg = "#825c3e" },
 		DiagnosticInfo = { fg = "#5d595d" },
 		DiagnosticHint = { fg = "#5d595d" },
+		DiagnosticOk = { fg = "#A8899C" },
 
 		DiagnosticLinehlError = { bg = "#241317" },
 		DiagnosticLinehlWarn = { bg = "#24180e" },
