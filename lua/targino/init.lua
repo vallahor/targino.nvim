@@ -78,6 +78,7 @@ function M.setup(opts)
 		TabLineSel = { fg = "#A98D92" },
 		Terminal = { fg = "#A98D92" },
 		Visual = { bg = "#2d1524" },
+		VisualYank = { bg = "#3e1d32" },
 		LinewiseVisual = { bg = "#A98D92" },
 		VisualNOS = { bg = "#43282f" },
 		WildMenu = { bg = "#493441" },
