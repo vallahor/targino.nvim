@@ -5,13 +5,7 @@ local config = {
 	repeat_italic = false,
 }
 
-local has_setup = false
 function M.setup(opts)
-	if has_setup then
-		return
-	end
-	has_setup = true
-
 	opts = opts or {}
 
 	config = vim.tbl_deep_extend("force", config, opts)
