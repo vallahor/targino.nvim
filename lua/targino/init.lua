@@ -153,10 +153,10 @@ function M.setup(opts)
 		MiniStatuslineModeVisual = { fg = "NONE", bg = "#471A37" },
 		MiniGhostText = { fg = "#696059", bg = "NONE" },
 
-		-- MiniCursorword = {   bg = "#312531",  },
-		-- MiniCursorwordCurrent = {   bg = "#312531",  },
-		MiniCursorword = { underline = true, sp = "#766975" },
-		MiniCursorwordCurrent = { underline = true, sp = "#766975" },
+		MiniCursorword = { bg = "#312531" },
+		MiniCursorwordCurrent = { bg = "#312531" },
+		-- MiniCursorword = { underline = true, sp = "#766975" },
+		-- MiniCursorwordCurrent = { underline = true, sp = "#766975" },
 
 		NvimTreeVertSplit = { bg = "#121112" },
 		NvimTreeIndentMarker = { fg = "#30323E" },
