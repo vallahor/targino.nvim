@@ -34,7 +34,6 @@ function M.setup(opts)
 		EndOfBuffer = { fg = "#121112" },
 		ErrorMsg = { fg = "#a23343" },
 		VertSplit = { fg = "#382536" },
-		WinSeparator = { fg = "#382536" },
 		Folded = { fg = "#A98D92" },
 		FoldColumn = { fg = "#A98D92" },
 		SignColumn = { fg = "#A98D92" },
@@ -63,6 +62,8 @@ function M.setup(opts)
 		SpellRare = { bg = "NONE", sp = "#a1495c" },
 		StatusLine = { bg = "#381B2F" },
 		WinBarNC = { bg = "#191319" },
+		WinSeparator = { fg = "#382536" },
+		MsgSeparator = { fg = "#382536" },
 
 		WinBar = { bg = "#381B2F" },
 		StatusLineTerm = { fg = "#A98D92", bg = "#382536" },
@@ -172,6 +173,14 @@ function M.setup(opts)
 
 		LazyGitFloat = { bg = "#191319" },
 		LazyGitBorder = { bg = "#191319" },
+
+		MultiCursorCursor = { bg = "#222022", fg = "#A98D92", standout = true },
+		MultiCursorVisual = { link = "Visual" },
+		MultiCursorSign = { link = "SignColumn" },
+		MultiCursorMatchPreview = { link = "Search" },
+		MultiCursorDisabledCursor = { bg = "#222022", fg = "#A98D92", standout = true },
+		MultiCursorDisabledVisual = { link = "Visual" },
+		MultiCursorDisabledSign = { link = "SignColumn" },
 
 		-- treesitter
 		["@include"] = { bold = config.include_bold, fg = "#96674E" },
