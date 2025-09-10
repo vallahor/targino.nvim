@@ -182,6 +182,12 @@ function M.setup(opts)
 		MultiCursorDisabledVisual = { link = "Visual" },
 		MultiCursorDisabledSign = { link = "SignColumn" },
 
+		IblIndent = { fg = "#3c2e3c" },
+		IblScope = { fg = "#695769" },
+
+		MiniIndentscopeSymbol = { fg = "#695769" },
+		MiniIndentscopeSymbolOff = { fg = "#3c2e3c" },
+
 		-- treesitter
 		["@include"] = { bold = config.include_bold, fg = "#96674E" },
 		["@keyword.import"] = { bold = config.include_bold, fg = "#96674E" },
